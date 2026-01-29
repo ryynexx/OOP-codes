@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+class counter
+{
+ private:
+      int count;
+public:
+     counter()
+     {
+        count=0;
+     }
+
+     void inc_count()
+     {
+        count++;
+     }
+
+     int get_count()
+     {
+        return count;
+     }     
+
+};
+int main()
+{
+    counter c1;
+    c1.inc_count();
+    cout<<"current count of c1: "<<c1.get_count()<<endl;
+
+    counter c2;
+    c2.inc_count();
+    cout<<"current count of c1: "<<c2.get_count()<<endl;
+
+    return 0;
+}
